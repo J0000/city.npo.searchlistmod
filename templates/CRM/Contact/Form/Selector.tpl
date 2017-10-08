@@ -99,15 +99,15 @@
               {if !empty($columnHeaders.street_address)}
           <td><span title="{$row.street_address|escape}">{$row.street_address|mb_truncate:22:"...":true}{if $row.do_not_mail} <span class="icon privacy-flag do-not-mail"></span>{/if}</span></td>
         {/if}
-        {if !empty($columnHeaders.city)}
-                <td>{$row.city}</td>
-        {/if}
-        {if !empty($columnHeaders.state_province)}
-                <td>{$row.state_province}</td>
-              {/if}
+
+        
               {if !empty($columnHeaders.postal_code)}
                 <td>{$row.postal_code}</td>
               {/if}
+              
+        {if !empty($columnHeaders.city)}
+                <td>{$row.city}</td>
+        {/if}              
         {if !empty($columnHeaders.country)}
                 <td>{$row.country}</td>
               {/if}
